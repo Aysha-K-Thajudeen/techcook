@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCook AI</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        .recipe-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .recipe-title {
+            color: #ff6b35;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 6px;
+            border-left: 5px solid #ff6b35;
+        }
+
+        .prep-time {
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        .nutrition {
+            background: #e8f5e9;
+            color: #1b5e20;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .steps {
+            line-height: 1.7;
+        }
+
+        .chef-tip {
+            background: #fff3e0;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            color: #e65100;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🍳 TechCook AI</h1>
+
+    <p class="tagline">Your Smart Cooking Companion</p>
+
+    <textarea id="ingredients" placeholder="Enter ingredients..."></textarea>
+
+    <h3>Select Cuisine</h3>
+
+    <div class="cuisine-grid">
+        <button class="cuisine-btn">Indian</button>
+        <button class="cuisine-btn">Chinese</button>
+        <button class="cuisine-btn">Italian</button>
+        <button class="cuisine-btn">Mexican</button>
+    </div>
+
+    <button id="generateBtn">Generate Recipe</button>
+
+    <div id="recipeResult"></div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
